@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative URL's</title>
+</head>
+<body>
+    <h1>Welcome to Relative URL's</h1>
+    <!--The code below is "basic_app:other", basic_app is the app_name given in urls.py of the app and
+     "other" is the view (name="others") in the urls.py of the app, url(r"^other/$", views.other, name="other"),
+     DONOT HAVE ANY SPACES before and after urls-->
+    <a href="{% url 'basic_app:other' %}">Other Page</a>
+    <!-- Admin is also an app in the project-->
+    <a href="{% url 'admin:index' %}">Admin Page</a>
+    <!-- GOTO INDEX Page -->
+    <a href="{% url 'index' %}">Link to Index</a>
+
+</body>
+</html>
